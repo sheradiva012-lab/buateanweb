@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Our Love Story 💗</title>
+
+<!-- FONT AESTHETIC -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffd6e8, #ffeaf3);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* OPENING */
+.opening {
+    background: rgba(255,255,255,0.65);
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 380px;
+    animation: fadeIn 2s ease;
+    color: #b03060;
+}
+
+.opening h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 80%;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #ff8fab;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #ff5f8a;
+}
+
+/* SLIDER */
+.slider {
+    display: none;
+    width: 90%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.65);
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    padding: 30px;
+    text-align: center;
+    color: #b03060;
+}
+
+.slide.active {
+    display: block;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    color: #c94a7c;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 20px;
+}
+
+/* LOVE */
+.love {
+    position: absolute;
+    top: -10px;
+    font-size: 18px;
+    animation: fall linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes fall {
+    to { transform: translateY(110vh); }
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIK -->
+<audio id="music" loop>
+    <source src="C:\Users\anggi\Downloads\terbuang_dalam_WAKTUU.m4a">
+</audio>
+
+<!-- OPENING -->
+<div class="opening" id="opening">
+    <h1>💗 for ean ganteng 💗</h1>
+    <p>Masukkan tanggal jadian kita kalo mau liat isinya wle</p>
+    <input type="date" id="date">
+    <br>
+    <button onclick="start()">klik akuu eann💕</button>
+</div>
+
+<!-- SLIDER -->
+<div class="slider" id="slider">
+
+<div class="slide active">
+<h1>🎉 Happy Birthday EAN KUU YANG PALING GANTENG🎉</h1>
+<p class="handwritten">di buat oleh syera pacar ean yang paling cantik</p>
+<img src="1.jpg">
+</div>
+
+<div class="slide">
+<h1>📅 Our First Day</h1>
+<p class="handwritten"></p>ini pertama kali ean ajak aku main hihi gantengnyaa
+<img src="C:\uasweb\uas alpro syera difa\birtday ean\9.jpeg">
+</div>
+
+<div class="slide"><p>AKU SAYANG KAMU SELAMANYAA  💖</p><img src="C:\uasweb\uas alpro syera difa\birtday ean\10.jpeg"></div>
+<div class="slide"><p>kalo ean sayangg aku selamanya juga gak 🤍</p><img src="C:\uasweb\uas alpro syera difa\birtday ean\12.jpeg"></div>
+<div class="slide"><p>lucu, ganteng, gemes, pinter, kamu serakah banget jadi orang!!!!!!!🌸</p><img src="C:\uasweb\uas alpro syera difa\birtday ean\2.jpeg"></div>
+<div class="slide"><p>Always be my favorite boy✨</p><img src="C:\uasweb\uas alpro syera difa\birtday ean\3.jpeg"></div>
+<div class="slide"><p>i will always be proud of u because i know u are always trying your best 💫</p><img src="C:\uasweb\uas alpro syera difa\birtday ean\13.jpeg"></div>
+<div class="slide"><p>aku sama ean suka bangett kucingg, nanti kita rawat kucing bareng2 ya 💞</p><img src="C:\uasweb\uas alpro syera difa\birtday ean\7.jpeg"></div>
+
+<div class="slide"><p class="handwritten">HAPPY  BIRTHDAY KESAYANGAN AKUU -wish u all the best baby,semoga ean sehat terus yaa panjang umur dan bahagia always datang ke ean, makin sayang sama ayah bunda eca ezel sama aku yaa? xixiix.rajin2 belajar nya ya sayangg semoga apa yang ean mau bisa tercapai semua yaa aamiin💗</p></div>
+<div class="slide"><p>ciee yang udah 18 udah dewasa ya? gak ahh tetep anak kecill bagii akuu 🥰</p></div>
+<div class="slide"><p>makasi buat ean udah bikin hidup aku lebih happy, with everything about aku beruntung banget udah ketemu kamu dan kenal kamu i am also very lucky to have you i love you infinitely🤍</p></div>
+<div class="slide"><p>Semoga hidup ean selalu di kelilingi hal baik yaa, i always pray fou u 🌷</p></div>
+<div class="slide"><p>sayangg bangett aku sama ean gatau lagi deh makin sayang makin cinta banyak2, walaupun kemarin2 sempet ada marah nya yaa gapapa ya sayang 💕</p></div>
+<div class="slide"><p>kadonya adalah pokoknya🎁</p></div>
+
+<div class="slide">
+<h1>❤️ sekali lagii happy birthday yaa eann sayangg ❤️</h1>
+<p class="handwritten">semangatt latihannyaa semangatt terus jalanin harinyaa, syera always support ean,semogaa aku bisa nemeninn ean teruss di the next birthdayy yaa love u moree sayang</p>
+</div>
+
+<div class="controls">
+<button onclick="prev()">⬅ Prev</button>
+<button onclick="next()">Next ➡</button>
+</div>
+
+</div>
+
+<script>
+let i = 0;
+const slides = document.querySelectorAll('.slide');
+
+function start() {
+    const date = document.getElementById("date").value;
+
+    document.getElementById("opening").style.display = "none";
+    document.getElementById("slider").style.display = "block";
+
+    const music = document.getElementById("music");
+    music.volume = 0.5;
+    music.play();
+
+    document.getElementById("dateText").innerText =
+        "Kita mulai bersama sejak " + (date || "hari spesial itu 💗");
+}
+
+function show(n) {
+    slides.forEach(s => s.classList.remove('active'));
+    slides[n].classList.add('active');
+}
+
+function next() {
+    i = (i + 1) % slides.length;
+    show(i);
+}
+
+function prev() {
+    i = (i - 1 + slides.length) % slides.length;
+    show(i);
+}
+
+// LOVE ANIMATION
+setInterval(() => {
+    const love = document.createElement("div");
+    love.className = "love";
+    love.innerHTML = "💗";
+    love.style.left = Math.random() * 100 + "vw";
+    love.style.animationDuration = (3 + Math.random() * 3) + "s";
+    document.body.appendChild(love);
+    setTimeout(() => love.remove(), 6000);
+}, 400);
+</script>
+
+</body>
+</html>
